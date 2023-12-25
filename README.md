@@ -94,13 +94,17 @@ Live Link : https://okk-dpew.onrender.com/
 
 -The API provides the following routes:
 
--/api/ocr:
--POST: Create a new OCR record.
--GET: Retrieve all OCR records with optional filtering by identification number.
--PUT: Update an existing OCR record.
--DELETE: Delete an OCR record by ID.
+/api/ocr:
+POST: Create a new OCR record.
+
+GET: Retrieve all OCR records with optional filtering by identification number.
+
+PUT: Update an existing OCR record.
+
+DELETE: Delete an OCR record by ID.
+
 /api/ocr/:id:
--GET: Retrieve a specific OCR record by ID.
+GET: Retrieve a specific OCR record by ID.
 
 ## Usage
 
