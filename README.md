@@ -5,6 +5,12 @@ This project is a full stack Flask application designed for extracting details f
 
 ## Demo Video : https://youtu.be/ddkTwp9J1M4
 
+## Demo 
+
+Demo Video Link -  https://youtu.be/ddkTwp9J1M4
+
+Live Link : https://okk-dpew.onrender.com/ ( Worked Perfectly on Local host, Slow Render upon Hosting upon Render , So please refer Demo Video)
+
 ## Features
 
 - **OCR with Tesseract:** Utilizes Tesseract for extracting text details from Thai ID cards.
@@ -64,16 +70,6 @@ Through POST Method , It is Stored in our MongoDB Database
    ```
 
    The application will be accessible at `http://localhost:5000`.
-
-
-
- 
- 
-## Demo 
-
-Demo Video Link -  https://drive.google.com/file/d/1lTPtBywreJLLoLmlL2743gycJanYza50/view?usp=sharing
-
-Live Link : https://okk-dpew.onrender.com/
 
 
 ## Demo
