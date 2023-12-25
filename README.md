@@ -1,4 +1,4 @@
-# Thai ID Card Details Extraction Full Stack Flask Application
+<img width="959" alt="update_output" src="https://github.com/araj6523/OCR/assets/108401537/57b09afe-389e-4c06-a8d2-aa9e9e7e3d8e"># Thai ID Card Details Extraction Full Stack Flask Application
 
 ## Overview
 
@@ -13,6 +13,22 @@ This project is a full stack Flask application designed for extracting details f
   - **Read:** Fetch and display ID card details from the database.
   - **Update:** Modify existing data in the database.
   - **Delete:** Remove ID card details from the database.
+
+
+## Demo
+
+
+<img width="960" alt="image_upload" src="https://github.com/araj6523/OCR/assets/108401537/f76dfe5e-9016-4833-ba00-e750f12c99fb">
+
+<img width="950" alt="insert_image_selection" src="https://github.com/araj6523/OCR/assets/108401537/b8afb136-04f9-4c5a-9092-64a6466081c8">
+
+<img width="960" alt="insert_result" src="https://github.com/araj6523/OCR/assets/108401537/71955d34-f56b-43a6-92e1-b026d2704de8">
+<img width="755" alt="Mongo_db_insert" src="https://github.com/araj6523/OCR/assets/108401537/69c12e8e-7de3-4fcc-a093-3f31c830cf75">
+<img width="944" alt="Fetch_by_id" src="https://github.com/araj6523/OCR/assets/108401537/8fd1250c-77fd-4250-b85e-2017c8caabef">
+<img width="960" alt="fetch_result" src="https://github.com/araj6523/OCR/assets/108401537/1490338d-5f56-4f1b-92a8-5b8bba6e3ca8">
+<img width="945" alt="update_input" src="https://github.com/araj6523/OCR/assets/108401537/301e7226-796a-47ee-9071-4fa497eb7993">
+<img width="959" alt="update_output" src="https://github.com/araj6523/OCR/assets/108401537/5d09a1b4-3c80-4dd4-bad6-95b05fbc714f">
+<img width="960" alt="delete_input" src="https://github.com/araj6523/OCR/assets/108401537/400ef530-37ee-4acf-b92f-233912b19e05">
 
 ## Technologies Used
 
