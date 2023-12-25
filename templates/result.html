@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask OCR Result</title>
+</head>
+<body>
+    <h1>OCR Result</h1>
+
+    {% if result %}
+    <p>Identification Number: {{ result.identification_number }}</p>
+    <p>Full Name: {{ result.name }}</p>
+    <p>Birthday: {{ result['date-of-birth'] }}</p>
+    <p>Date of Issue: {{ result['date-of-issue'] }}</p>
+    <p>Date of Expiry: {{ result['date-of-expiry'] }}</p>
+
+        <!-- Update form -->
+
+    {% endif %}
+    
+
+    <a href="/">Go Back</a>
+</body>
+</html>

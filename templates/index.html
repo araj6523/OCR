@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flask OCR</title>
+    
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #fff; /* Set background color to white */
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                padding-left: 20px; /* Adjust this value as needed */
+            }
+    
+            h1, h2 {
+                color: #333;
+            }
+    
+            h1 {
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+    
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #555;
+            }
+    
+            input[type="file"],
+            input[type="text"] {
+                width: calc(100% - 22px);
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+    
+            button {
+                background-color: #007BFF; /* Set button background color to blue */
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                display: block;
+                margin: 10px 0 0 0;
+            }
+    
+            button:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+    
+            #result,
+            #updateResult {
+                background-color: #fff;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+<body>     
+    <h1>OCR Form</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="image_upload">Upload Image:</label>
+        <input type="file" id="image_upload" name="image_upload" accept="image/*" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p></p>
+    <h1>MongoDB Operations</h1>
+
+    <!-- Read Operation -->
+    <label for="searchIdentificationNumber">Search by Identification Number:</label>
+    <input type="text" id="searchIdentificationNumber" placeholder="Enter Identification Number">
+    <button onclick="get_data_by_identification_number()">Search</button>
+    <div id="result"></div>
+
+    <!-- Update Operation -->
+    <h2>Update Information</h2>
+    <label for="updateId">ID to Update:</label>
+    <input type="text" id="updateId" placeholder="Enter ID">
+    <label for="updateName">New Name:</label>
+    <input type="text" id="updateName" placeholder="Enter New Name">
+
+    <label for="updateBirth">New BirthDate:</label>
+    <input type="text" id="updateBirth" placeholder="Enter New Birthdate">
+
+    <label for="updateIssue">New Issue:</label>
+    <input type="text" id="updateIssue" placeholder="Enter New Issue date">
+
+    <label for="updateExpiry">New Expiry:</label>
+    <input type="text" id="updateExpiry" placeholder="Enter New Expiry date">
+
+    <button onclick="updateData()">Update</button>
+
+    <!-- Delete Operation -->
+    <h2>Delete Record</h2>
+    <label for="deleteId">ID to Delete:</label>
+    <input type="text" id="deleteId" placeholder="Enter ID">
+    <button onclick="deleteData()">Delete</button>
+
+    <script>
+        
+        async function get_data_by_identification_number() {
+        const identificationNumber = document.getElementById('searchIdentificationNumber').value;
+
+        // Fetch data by identification_number
+        const response = await fetch(`/api/data?identification_number=${identificationNumber}`);
+
+        if (response.ok) {
+            const data = await response.json();
+           // document.getElementById('result').innerHTML = JSON.stringify(data, null, 2);
+            document.getElementById('result').innerHTML = `<pre>${data}</pre>`;
+        } else {
+            document.getElementById('result').innerHTML = 'Data not found';
+        }
+    }
+
+        async function updateData() {
+            const id = document.getElementById('updateId').value;
+            const newName = document.getElementById('updateName').value;
+ 
+            const newBirth = document.getElementById('updateBirth').value;
+            const newIssue = document.getElementById('updateIssue').value;
+            const newExpiry = document.getElementById('updateExpiry').value;
+            
+            const response = await fetch(`/api/data/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name: newName ,
+        'date-of-birth': newBirth,  // Note: Use quotes for the property name with hyphen
+        'date-of-issue': newIssue,
+        'date-of-expiry': newExpiry}),
+            });
+            
+            const result = await response.json();
+            //const updateResultElement = document.getElementById('updateResult');
+           // updateResultElement.innerHTML = `<p>${result.message}</p>`;
+           alert("Updated sucessfully")
+            console.log(result);
+        }
+
+        async function deleteData() {
+            const id = document.getElementById('deleteId').value;
+
+            const response = await fetch(`/api/data/${id}`, {
+                method: 'DELETE',
+            });
+
+            const result = await response.json();
+            console.log(result);
+        }
+    </script>
+</body>
+</html
