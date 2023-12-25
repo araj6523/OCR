@@ -46,6 +46,11 @@ This project is a full stack Flask application designed for extracting details f
 
 ## Data Extraction
 
+Thai ID Card Sample Image : 
+
+![oqveyyx81hh91](https://github.com/araj6523/OCR/assets/108401537/3e4800b3-d086-4314-8de7-c1637cd30121)
+
+
 First it is uploaded through the frontend 
 
 <img width="960" alt="image_upload" src="https://github.com/araj6523/OCR/assets/108401537/f76dfe5e-9016-4833-ba00-e750f12c99fb">
