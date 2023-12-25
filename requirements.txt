@@ -1,0 +1,14 @@
+matplotlib
+numpy
+opencv-python>=4.0
+Pillow>=8.3
+pytesseract>=0.3
+python-bidi
+PyYAML
+scikit-image
+scipy
+torch
+torchvision>=0.5
+easyocr
+pylibdmtx
+pylibdmtx[scripts]
