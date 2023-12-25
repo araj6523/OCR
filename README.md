@@ -13,7 +13,7 @@ Live Link : https://okk-dpew.onrender.com/ ( Worked Perfectly on Local host, Slo
 
 ## Features
 
-- **OCR with Tesseract:** Utilizes Tesseract for extracting text details from Thai ID cards.
+- **OCR with Tesseract:** Utilizes Tesseract for extracting text details from Thai ID cards. Trained data using a sample Thai ID Card for better Extraction 
 - **MongoDB Integration:** Stores the extracted information in a MongoDB database for efficient data management.
 - **CRUD Operations:**
   - **Create:** Add new ID card details to the database.
