@@ -15,6 +15,25 @@ This project is a full stack Flask application designed for extracting details f
   - **Update:** Modify existing data in the database.
   - **Delete:** Remove ID card details from the database.
 
+
+## Data Extraction
+
+Thai ID National Card : https://drive.google.com/file/d/1FlJOmAEVPkURgWvYomIr9iVjfKEn-hIW/view?usp=sharing
+
+
+First it is uploaded through the frontend 
+
+<img width="960" alt="image_upload" src="https://github.com/araj6523/OCR/assets/108401537/f76dfe5e-9016-4833-ba00-e750f12c99fb">
+
+Then Accurate Results are shown :
+
+<img width="960" alt="insert_result" src="https://github.com/araj6523/OCR/assets/108401537/71955d34-f56b-43a6-92e1-b026d2704de8">
+
+Through POST Method , It is Stored in our MongoDB Database
+
+<img width="755" alt="Mongo_db_insert" src="https://github.com/araj6523/OCR/assets/108401537/69c12e8e-7de3-4fcc-a093-3f31c830cf75">
+
+
  ## Instructions
 
 1. Clone the repository:
@@ -46,22 +65,6 @@ This project is a full stack Flask application designed for extracting details f
 
    The application will be accessible at `http://localhost:5000`.
 
-## Data Extraction
-
-Thai ID National Card : https://drive.google.com/file/d/1FlJOmAEVPkURgWvYomIr9iVjfKEn-hIW/view?usp=sharing
-
-
-First it is uploaded through the frontend 
-
-<img width="960" alt="image_upload" src="https://github.com/araj6523/OCR/assets/108401537/f76dfe5e-9016-4833-ba00-e750f12c99fb">
-
-Then Accurate Results are shown :
-
-<img width="960" alt="insert_result" src="https://github.com/araj6523/OCR/assets/108401537/71955d34-f56b-43a6-92e1-b026d2704de8">
-
-Through POST Method , It is Stored in our MongoDB Database
-
-<img width="755" alt="Mongo_db_insert" src="https://github.com/araj6523/OCR/assets/108401537/69c12e8e-7de3-4fcc-a093-3f31c830cf75">
 
 
  
