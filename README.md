@@ -25,7 +25,7 @@ This project is a full stack Flask application designed for extracting details f
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/thai-id-card-extraction.git
+   git clone 
    ```
 
 2. Install the required dependencies:
