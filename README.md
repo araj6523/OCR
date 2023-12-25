@@ -89,36 +89,18 @@ Live Link : https://okk-dpew.onrender.com/
 - **Tesseract:** An OCR engine for extracting text from images.
 - **MongoDB:** A NoSQL database for storing and managing the extracted data.
 
-## Installation
+## API Endpoints
 
-1. Clone the repository:
 
-   ```bash
-   git clone 
-   ```
+-The API provides the following routes:
 
-2. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Set up Tesseract OCR:
-
-   Follow the Tesseract installation guide for your operating system: [Tesseract Installation Guide](https://github.com/tesseract-ocr/tesseract).
-
-4. Configure MongoDB:
-
-   - Install MongoDB and set up a database.
-   - Update the MongoDB connection settings in the `config.py` file.
-
-5. Run the application:
-
-   ```bash
-   python app.py
-   ```
-
-   The application will be accessible at `http://localhost:5000`.
+-/api/ocr:
+-POST: Create a new OCR record.
+-GET: Retrieve all OCR records with optional filtering by identification number.
+-PUT: Update an existing OCR record.
+-DELETE: Delete an OCR record by ID.
+/api/ocr/:id:
+-GET: Retrieve a specific OCR record by ID.
 
 ## Usage
 
