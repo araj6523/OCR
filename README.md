@@ -17,6 +17,22 @@ This project is a full stack Flask application designed for extracting details f
 
  - To run this Web Application, Install tesseract-OCR from any location and then  add the directory where the tesseract-OCR binaries are located to the Path variables, probably C:\Program Files\Tesseract-OCR.
  - Run app.py to start the server
+
+## Image Extraction
+
+First it is uploaded through the frontend 
+
+<img width="960" alt="image_upload" src="https://github.com/araj6523/OCR/assets/108401537/f76dfe5e-9016-4833-ba00-e750f12c99fb">
+
+Then Accurate Results are shown :
+
+<img width="960" alt="insert_result" src="https://github.com/araj6523/OCR/assets/108401537/71955d34-f56b-43a6-92e1-b026d2704de8">
+
+Through POST Method , It is Stored in our MongoDB Database
+
+<img width="755" alt="Mongo_db_insert" src="https://github.com/araj6523/OCR/assets/108401537/69c12e8e-7de3-4fcc-a093-3f31c830cf75">
+
+
  
  
 ## Demo 
