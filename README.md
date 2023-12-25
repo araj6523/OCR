@@ -12,6 +12,10 @@ This project is a full stack Flask application designed for extracting details f
   - **Read:** Fetch and display ID card details from the database.
   - **Update:** Modify existing data in the database.
   - **Delete:** Remove ID card details from the database.
+ 
+## Demo Video
+
+Demo Video Link -  https://drive.google.com/file/d/1lTPtBywreJLLoLmlL2743gycJanYza50/view?usp=sharing
 
 
 ## Demo
