@@ -9,7 +9,7 @@ This project is a full stack Flask application designed for extracting details f
 
 Demo Video Link -  https://youtu.be/ddkTwp9J1M4
 
-Live Link : https://okk-dpew.onrender.com/ ( Worked Perfectly on Local host, Slow Render upon Hosting upon Render , So please refer Demo Video)
+Live Link : https://okk-dpew.onrender.com/ ( Worked Perfectly on Local host, Slow Rendering upon Hosting on Render , So please refer Demo Video)
 
 ## Features
 
