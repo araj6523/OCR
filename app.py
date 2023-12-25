@@ -1,3 +1,5 @@
+#! /usr/bin/python
+
 from flask import Flask, render_template, request, flash, redirect, url_for, jsonify
 from ocr1 import PersonalCard 
 from main import Card1 # Assuming the OCR script is in the same directory
