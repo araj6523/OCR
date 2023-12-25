@@ -12,3 +12,4 @@ torchvision>=0.5
 easyocr
 pylibdmtx
 pylibdmtx[scripts]
+Flask==1.1.2
