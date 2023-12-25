@@ -12,6 +12,11 @@ This project is a full stack Flask application designed for extracting details f
   - **Read:** Fetch and display ID card details from the database.
   - **Update:** Modify existing data in the database.
   - **Delete:** Remove ID card details from the database.
+
+ ## Instructions
+
+ - To run this Web Application, Install tesseract-OCR from any location and then  add the directory where the tesseract-OCR binaries are located to the Path variables, probably C:\Program Files\Tesseract-OCR.
+ - Run app.py to start the server
  
  
 ## Demo 
