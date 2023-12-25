@@ -3,6 +3,8 @@
 
 This project is a full stack Flask application designed for extracting details from Thai ID cards using Optical Character Recognition (OCR) with Tesseract. The extracted information is stored in a MongoDB database, and the application supports CRUD (Create, Read, Update, Delete) operations for managing the extracted data.
 
+## Demo Video : https://youtu.be/ddkTwp9J1M4
+
 ## Features
 
 - **OCR with Tesseract:** Utilizes Tesseract for extracting text details from Thai ID cards.
