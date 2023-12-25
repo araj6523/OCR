@@ -15,8 +15,34 @@ This project is a full stack Flask application designed for extracting details f
 
  ## Instructions
 
- - To run this Web Application, Install tesseract-OCR from any location and then  add the directory where the tesseract-OCR binaries are located to the Path variables, probably C:\Program Files\Tesseract-OCR.
- - Run app.py to start the server
+1. Clone the repository:
+
+   ```bash
+   git clone 
+   ```
+
+2. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up Tesseract OCR:
+
+   Follow the Tesseract installation guide for your operating system: [Tesseract Installation Guide](https://github.com/tesseract-ocr/tesseract).
+
+4. Configure MongoDB:
+
+   - Install MongoDB and set up a database.
+   - Update the MongoDB connection settings in the `config.py` file.
+
+5. Run the application:
+
+   ```bash
+   python app.py
+   ```
+
+   The application will be accessible at `http://localhost:5000`.
 
 ## Data Extraction
 
@@ -113,7 +139,7 @@ MONGO_URI = 'mongodb://localhost:27017/your-database-name'
 SECRET_KEY = 'your-secret-key'
 ```
 
-## Contributing
+## Contribution
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
