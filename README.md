@@ -1,4 +1,3 @@
-<img width="959" alt="update_output" src="https://github.com/araj6523/OCR/assets/108401537/57b09afe-389e-4c06-a8d2-aa9e9e7e3d8e"># Thai ID Card Details Extraction Full Stack Flask Application
 
 ## Overview
 
