@@ -93,6 +93,34 @@ Through POST Method , It is Stored in our MongoDB Database
 - **Tesseract:** An OCR engine for extracting text from images.
 - **MongoDB:** A NoSQL database for storing and managing the extracted data.
 
+## Data Preprocessing ( ocr.py )
+
+Preprocessing Steps:
+
+1. Image Reading: The input image is read using OpenCV, and its color channels are converted to RGB.
+
+2.Template Matching:
+
+SIFT features are used to detect key points and descriptors for both the input image and a reference template.
+Template matching is performed using FLANN (Fast Library for Approximate Nearest Neighbors) to find matches between the key points of the input image and the template.
+Perspective transformation is applied to align the input image with the template.
+
+3. ROI Extraction:
+
+Regions of interest (ROIs) are defined in a YAML configuration file, specifying the coordinates of areas containing relevant information on the identification card.
+For each defined ROI, the corresponding part of the aligned image is extracted.
+
+4. Text Extraction:
+
+Text extraction is performed using either EasyOCR or Tesseract OCR based on the specified provider.
+The extracted text is processed, and if the save_extract_result option is enabled, the extracted regions are saved as images.
+
+5. Data Mapping and Formatting:
+
+The extracted information is mapped to a predefined structure, and additional formatting is applied, such as splitting names into prefixes, first names, and last names.
+The final result is presented as a named tuple and converted to JSON format.
+
+
 ## API Endpoints
 
 
